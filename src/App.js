@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import HospitalMap from './components/HospitalMap';
-import logo from './logo.svg';
 import './App.css';
-
 
 class App extends Component {
   render() {
     return (
-      <HospitalMap></HospitalMap>
-    )
+      <div class='app-background'>
+        <h1>Bed Availability</h1>
+        <HospitalMap></HospitalMap>
+      </div>
+    );
   }
 }
 
