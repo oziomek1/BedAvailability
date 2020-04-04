@@ -9,7 +9,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div class='app-background'>
+      <div className='app-background'>
         <h1>Bed Availability</h1>
         <HospitalMap locations={this.state.locations}></HospitalMap>
       </div>

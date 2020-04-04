@@ -3,7 +3,8 @@
         {
             "name": "Helev Hospital",
             "contact": {
-                "address": "Borgmester Ib Juuls Vej 1, 2730 Herlev, Denmark",
+                "address": "Borgmester Ib Juuls Vej 1, 2730 Herlev",
+                "country": "Denmark",
                 "telephone": "+45 38 68 38 68"
             },
             "geometry": {
@@ -17,7 +18,8 @@
         {
             "name": "Gentofte Hospital",
             "contact": {
-                "address": "Gentofte Hospitalsvej 1, 2900 Hellerup, Denmark",
+                "address": "Gentofte Hospitalsvej 1, 2900 Hellerup",
+                "country": "Denmark",
                 "telephone": "+45 38 67 38 67"
             },
             "geometry": {
@@ -31,7 +33,8 @@
         {
             "name": "Bispebjerg Hospital",
             "contact": {
-                "address": "Bispebjerg Bakke 23, 2400 København NV, Denmark",
+                "address": "Bispebjerg Bakke 23, 2400 København NV",
+                "country": "Denmark",
                 "telephone": "+45 38 63 50 00"
             },
             "geometry": {
@@ -45,7 +48,8 @@
         {
             "name": "Frederiksberg Hospital",
             "contact": {
-                "address": "Nordre Fasanvej 57, 2000 Frederiksberg, Denmark",
+                "address": "Nordre Fasanvej 57, 2000 Frederiksberg",
+                "country": "Denmark",
                 "telephone": "+45 38 16 38 16"
             },
             "geometry": {

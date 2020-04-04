@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import { Icon } from "leaflet";
 
+const hospitalIcon = new Icon({
+    iconUrl: "https://image.flaticon.com/icons/svg/69/69658.svg",
+    iconSize: [25, 25]
+});
+
 export default class HospitalMap extends Component {
     constructor() {
         super();
@@ -32,6 +37,7 @@ export default class HospitalMap extends Component {
                         onclick={() => {
                             this.setActiveHospital(hospital);
                         }}
+                        icon={hospitalIcon}
                     >
                         {this.state.activeHospital &&
                             (<Popup
@@ -42,8 +48,14 @@ export default class HospitalMap extends Component {
                             >
                                 <div>
                                     <h2>{this.state.activeHospital.name}</h2>
-                                    <p>{this.state.activeHospital.contact.address}</p>
-                                    <p>{this.state.activeHospital.contact.telephone}</p>
+                                    <p>
+                                        <strong>Address:</strong><br/>
+                                        {this.state.activeHospital.contact.address}
+                                    </p>
+                                    <p>
+                                        <strong>Telephone:</strong><br/>
+                                        {this.state.activeHospital.contact.telephone}
+                                    </p>
                                 </div>
                             </Popup>)
                         }
