@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import { Icon } from "leaflet";
-import * as hospitalLocations from "../data/hospital-locations.json";
-
 
 export default class HospitalMap extends Component {
     constructor() {
@@ -27,7 +25,7 @@ export default class HospitalMap extends Component {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 />
-                {hospitalLocations.hospitals.map((hospital, index) => (
+                {this.props.locations.default.hospitals.map((hospital, index) => (
                     <Marker 
                         key={index} 
                         position={[hospital.geometry.coordinates.latitude, hospital.geometry.coordinates.longitude]}
