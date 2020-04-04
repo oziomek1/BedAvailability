@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/BedAvailability/static/css/main.5f361e03.chunk.css",
+    "main.js": "/BedAvailability/static/js/main.71abcc5f.chunk.js",
+    "main.js.map": "/BedAvailability/static/js/main.71abcc5f.chunk.js.map",
+    "runtime-main.js": "/BedAvailability/static/js/runtime-main.f6efc540.js",
+    "runtime-main.js.map": "/BedAvailability/static/js/runtime-main.f6efc540.js.map",
+    "static/js/2.50175e33.chunk.js": "/BedAvailability/static/js/2.50175e33.chunk.js",
+    "static/js/2.50175e33.chunk.js.map": "/BedAvailability/static/js/2.50175e33.chunk.js.map",
+    "index.html": "/BedAvailability/index.html",
+    "precache-manifest.4cfaf3b9f8629bb11bf0bd4d9eb33ba5.js": "/BedAvailability/precache-manifest.4cfaf3b9f8629bb11bf0bd4d9eb33ba5.js",
+    "service-worker.js": "/BedAvailability/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/BedAvailability/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.50175e33.chunk.js.LICENSE.txt": "/BedAvailability/static/js/2.50175e33.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/BedAvailability/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6efc540.js",
+    "static/js/2.50175e33.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.71abcc5f.chunk.js"
+  ]
+}
