@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c20841fae25015281aefec0521850918",
+    "revision": "d3200e7ee5afa4e444d10d990e08a0a3",
     "url": "/BedAvailability/index.html"
   },
   {
-    "revision": "da4ef3fc4e88a94a46d5",
+    "revision": "d2e9942056b89d156c15",
     "url": "/BedAvailability/static/css/main.33a82a1c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BedAvailability/static/js/2.2896d5dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "da4ef3fc4e88a94a46d5",
-    "url": "/BedAvailability/static/js/main.03cfebc3.chunk.js"
+    "revision": "d2e9942056b89d156c15",
+    "url": "/BedAvailability/static/js/main.0196c2ef.chunk.js"
   },
   {
     "revision": "6586cdcf8220ce551af4",
