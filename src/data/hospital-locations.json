@@ -1,0 +1,60 @@
+{
+    "hospitals": [
+        {
+            "name": "Helev Hospital",
+            "contact": {
+                "address": "Borgmester Ib Juuls Vej 1, 2730 Herlev, Denmark",
+                "telephone": "+45 38 68 38 68"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": {
+                    "latitude": "55.730952",
+                    "longitude": "12.44357"
+                }
+            }
+        },
+        {
+            "name": "Gentofte Hospital",
+            "contact": {
+                "address": "Gentofte Hospitalsvej 1, 2900 Hellerup, Denmark",
+                "telephone": "+45 38 67 38 67"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": {
+                    "latitude": "55.739281",
+                    "longitude": "12.547714"
+                }
+            }
+        },
+        {
+            "name": "Bispebjerg Hospital",
+            "contact": {
+                "address": "Bispebjerg Bakke 23, 2400 København NV, Denmark",
+                "telephone": "+45 38 63 50 00"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": {
+                    "latitude": "55.71217",
+                    "longitude": "12.541798"
+                }
+            }
+        },
+        {
+            "name": "Frederiksberg Hospital",
+            "contact": {
+                "address": "Nordre Fasanvej 57, 2000 Frederiksberg, Denmark",
+                "telephone": "+45 38 16 38 16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": {
+                    "latitude": "55.685132",
+                    "longitude": "12.524944"
+                }
+            }
+        }
+    ]
+}
