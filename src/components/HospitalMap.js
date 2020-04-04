@@ -5,15 +5,20 @@ import * as hospitalLocations from "../data/hospital-locations.json";
 
 
 export default class HospitalMap extends Component {
-    state = {
-        lat: 55.6761,
-        lng: 12.5683,
-        zoom: 11,
-        activeHospital: null,
+    constructor() {
+        super();
+        this.state = {
+            lat: 55.6761,
+            lng: 12.5683,
+            zoom: 11,
+            activeHospital: null,
+        };
     }
 
     setActiveHospital(hospital) {
-        this.activeHospital = hospital;
+        this.setState({
+            activeHospital: hospital,
+        });
     }
     render() {
         return (
@@ -29,22 +34,25 @@ export default class HospitalMap extends Component {
                         onclick={() => {
                             this.setActiveHospital(hospital);
                         }}
-                    />
+                    >
+                        {this.state.activeHospital &&
+                            (<Popup
+                                position={[
+                                    this.state.activeHospital.geometry.coordinates.latitude, 
+                                    this.state.activeHospital.geometry.coordinates.longitude
+                                ]}
+                            >
+                                <div>
+                                    <h2>{this.state.activeHospital.name}</h2>
+                                    <p>{this.state.activeHospital.contact.address}</p>
+                                    <p>{this.state.activeHospital.contact.telephone}</p>
+                                </div>
+                            </Popup>)
+                        }
+                    </Marker>
                 ))}
 
-                {this.activeHospital && 
-                    (<Popup
-                        position={[
-                            this.activeHospital.geometry.coordinates.latitude, 
-                            this.activeHospital.geometry.coordinates.longitude
-                        ]}
-                    >
-                        <div>
-                            <h2>{this.activeHospital.name}</h2>
-                            <p>{this.activeHospital.contact.address}</p>
-                        </div>
-                    </Popup>)
-                }
+                
             </Map>
         )
     }
