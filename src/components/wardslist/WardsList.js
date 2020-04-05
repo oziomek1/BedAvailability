@@ -93,7 +93,6 @@ class WardsList extends Component {
                             </TableHead>
                             <TableBody>
                                 {this.state.wards.map((item, i) => {
-                                    console.log(i);
                                     return (
                                         <TableRow 
                                             style={{ backgroundColor: item.covid.color }} 
