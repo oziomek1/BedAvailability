@@ -1,0 +1,2 @@
+(this.webpackJsonpbed_availability=this.webpackJsonpbed_availability||[]).push([[4],{94:function(t,e,n){"use strict";n.r(e);var a=n(22),i=n(23),r=n(24),c=n(25),u=n(0),b=n.n(u),l=function(t){Object(c.a)(n,t);var e=Object(r.a)(n);function n(){return Object(a.a)(this,n),e.apply(this,arguments)}return Object(i.a)(n,[{key:"render",value:function(){return b.a.createElement("div",null,"Info")}}]),n}(u.Component);e.default=l}}]);
+//# sourceMappingURL=4.0e6fe9af.chunk.js.map
