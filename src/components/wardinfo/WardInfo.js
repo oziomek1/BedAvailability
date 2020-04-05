@@ -69,7 +69,6 @@ class WardInfo extends Component {
     render() {
         const { classes } = this.props;
         const ward = this.state.wards[this.props.wardId - 1];
-        console.log(ward);
         if (ward) {
             return (
                 <div className={classes.root}>

@@ -95,7 +95,6 @@ class BedsList extends Component {
     render() {
         const { classes } = this.props;
         const ward = this.props.wardId;
-        console.log(ward);
         return (
             <Grid item xs={12} sm={12} md={6}>
                 <Paper className={classes.root}>

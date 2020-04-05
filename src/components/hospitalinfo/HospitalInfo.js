@@ -30,7 +30,7 @@ class HospitalInfo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            hospitalName: 'Helev Hospital',
+            hospitalName: 'Herlev Hospital',
             hospitalAddress: 'Borgmester Ib Juuls Vej 1, 2730 Herlev',
             hospitalTelephone: "+45 38 68 38 68"
         };
