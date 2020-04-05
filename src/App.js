@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
-import HospitalMap from './components/HospitalMap';
-import * as hospitalLocations from "./data/hospital-locations.json";
+import { BrowserRouter as Router } from 'react-router-dom'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import AppNav from './navigation/AppNav';
+import * as colors from './data/colors';
 import './App.css';
 
-class App extends Component {
-  state = {
-    locations: hospitalLocations,
+const theme = createMuiTheme({
+  palette: {
+      primary: {
+        main: colors.darkBlue
+      },
+      secondary: {
+        main: colors.darkRed
+      },
+      error: {
+        main: colors.darkRed
+      },
+      info: {
+        main: colors.darkGreen
+      },
+      success: {
+        main: colors.lightGreen
+      }
   }
+});
+
+class App extends Component {
   render() {
     return (
-      <div className='app-background'>
-        <h1>Bed Availability</h1>
-        <HospitalMap locations={this.state.locations}></HospitalMap>
-      </div>
+      <Router>
+        <ThemeProvider theme={theme}>
+          <AppNav />
+        </ThemeProvider>
+      </Router>
     );
   }
 }
