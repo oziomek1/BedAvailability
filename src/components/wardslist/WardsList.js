@@ -16,6 +16,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import * as colors from '../../data/colors';
 import * as covidStatus from '../../data/covidStatus';
 
+
 const styles = theme => ({
     root: {
         marginTop: theme.spacing * 3,
@@ -77,9 +78,10 @@ class WardsList extends Component {
     }
 
     render() {
+        console.log(this.state);
         const { classes } = this.props;
         return (
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} sm={12} md={8}>
                 <Paper className={classes.root}>
                     <Toolbar className={classes.tableToolbar}>Hospital wards</Toolbar>
                     <TableContainer >
@@ -99,8 +101,8 @@ class WardsList extends Component {
                                             component={Link} to={`/ward/${i + 1}`}
                                             key={`row-${i}`}
                                         >
-                                            <StyledTableCell style={{ width: 200 }}>{item.name}</StyledTableCell>
-                                            <StyledTableCell style={{ width: 300 }}>{item.covid.description}</StyledTableCell>
+                                            <StyledTableCell style={{ width: '25%' }}>{item.name}</StyledTableCell>
+                                            <StyledTableCell style={{ width: '25%' }}>{item.covid.description}</StyledTableCell>
                                             <TableCell align="right">
                                                 <Button
                                                     onClick={this.updateWard.bind(this, i)}

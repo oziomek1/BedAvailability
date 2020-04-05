@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -14,6 +13,7 @@ const styles = theme => ({
     root: {
         display: 'inline-block',
         marginTop: theme.spacing * 3,
+        marginBottom: 40,
     },
     title: {
         fontSize: 24,
@@ -39,7 +39,7 @@ class HospitalInfo extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={8} md={4}>
                 <Card className={classes.root}>
                     <CardContent>
                         <Typography variant="h4" className={classes.title} gutterBottom>

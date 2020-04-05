@@ -6,7 +6,7 @@ export const covidStatus = {
         color: colors.covidGreen
     },
     COVIDREADY: {
-        description: 'Ready for COVID',
+        description: 'Available soon for COVID',
         color: colors.covidYellow
     },
     COVID: {

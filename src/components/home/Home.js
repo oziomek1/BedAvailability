@@ -11,12 +11,7 @@ const styles = theme => ({
         flexGrow: 1,
         marginTop: 20,
         marginBottom: 40,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      },
+    }
   });
 
 class Home extends Component {
