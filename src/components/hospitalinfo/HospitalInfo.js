@@ -11,14 +11,18 @@ import { withStyles } from '@material-ui/styles';
 import './HospitalInfo.css';
 
 const styles = theme => ({
-    bullet: {
+    root: {
         display: 'inline-block',
-        marginTop: theme.spacing.unit * 3,
+        marginTop: theme.spacing * 3,
     },
     title: {
-        fontSize: 20,
+        fontSize: 24,
         fontWeight: 700,
-        marginBottom: 12,
+        marginBottom: 24,
+    },
+    text: {
+        fontSize: 18,
+        fontWeight: 700
     }
   });
 
@@ -41,16 +45,16 @@ class HospitalInfo extends Component {
                         <Typography variant="h4" className={classes.title} gutterBottom>
                             {this.state.hospitalName}
                         </Typography>
-                        <Typography variant="body2" component="p">
+                        <Typography variant="body2" className={classes.text} component="p">
                             Address: <strong>{this.state.hospitalAddress}</strong>
                         </Typography>
                         <br/>
-                        <Typography variant="body2" component="p">
-                            Zip code: <strong>{this.state.hospitalTelephone}</strong>
+                        <Typography variant="body2" className={classes.text} component="p">
+                            Telephone: <strong>{this.state.hospitalTelephone}</strong>
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href="https://www.herlevhospital.dk/">
+                        <Button variant="contained" color="secondary" size="small" href="https://www.herlevhospital.dk/">
                             Hospital homepage
                         </Button>
                     </CardActions>

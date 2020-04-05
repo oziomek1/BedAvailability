@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/styles';
-import HospitalInfo from '../hospitalinfo/HospitalInfo';
-import WardsList from '../wardslist/WardsList';
-import './Home.css';
+import WardInfo from '../wardinfo/WardInfo';
+import './Ward.css';
 
 const styles = theme => ({
     root: {
@@ -19,14 +18,22 @@ const styles = theme => ({
       },
   });
 
-class Home extends Component {
+class Ward extends Component {
+    state = {
+        wardId: null
+    }
+    async componentDidMount () {
+        const { id } = this.props.match.params
+        this.setState({
+            wardId: id,
+        })
+    }
     render() {
         const { classes } = this.props;
         return (
             <div className={classes.root}>
                 <Grid container justify="center" spacing={4}>
-                    <HospitalInfo></HospitalInfo>
-                    <WardsList></WardsList>
+                    <WardInfo wardId={this.state.wardId}></WardInfo>
                 </Grid>
             </div>
         )
@@ -34,8 +41,8 @@ class Home extends Component {
 
 }
 
-Home.propTypes = {
+Ward.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(Ward);

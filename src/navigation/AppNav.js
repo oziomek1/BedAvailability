@@ -10,6 +10,7 @@ import Footer from '../components/footer/Footer';
 
 const LazyHomePage = React.lazy(() => import('../components/home/Home'));
 const LazyInfoPage = React.lazy(() => import('../components/info/Info'));
+const LazyWardPage = React.lazy(() => import('../components/ward/Ward'));
 
 class AppNav extends Component {
     render() {
@@ -24,6 +25,7 @@ class AppNav extends Component {
                 <main>
                     <React.Suspense fallback={<CircularProgress color="secondary" />}>
                         <Route exact path='/' component={Main} />
+                        <Route path='/ward/:id' component={LazyWardPage}/>
                         <Route path='/info' component={LazyInfoPage}/>
                     </React.Suspense>
                 </main>
