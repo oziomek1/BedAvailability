@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import InfoIcon from '@material-ui/icons/Info';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
-
+import './Header.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
